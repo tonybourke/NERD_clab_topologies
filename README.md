@@ -26,3 +26,6 @@ Change to the directory, like clos-medium, and run the containerlab deploy comma
 
 <pre>
 sudo containerlab deploy
+</pre>
+
+You should see all the containers started. It may take a minute or two. 
