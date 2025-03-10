@@ -8,7 +8,7 @@ This topolgy is two spines, four leafs, two 'hosts' and one router connected to 
 
 This topology is sufficient to run a three-stage Clos EVPN/VXLAN network, or a standard Layer 2 collapsed core (Arista calls is Layer 2 leaf/spine).
 
-![Clos Medium](clos-medium-diagram.png)
+![Clos Medium](diagram-clos-medium.png)
 
 ## Installing
 
