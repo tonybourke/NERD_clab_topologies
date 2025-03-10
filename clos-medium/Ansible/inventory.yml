@@ -11,9 +11,15 @@ all:
     ansible_become: yes
     ansible_become_method: enable
   children:
-    LEAFS:
-      hosts:
-        leaf1:
-        leaf2:
-        leaf3:
-        leaf4:
+    FABRIC:
+      children:
+        SPINES:
+          hosts:
+            spine1:
+            spine2:
+        LEAFS:
+          hosts:
+            leaf1:
+            leaf2:
+            leaf3:
+            leaf4:
