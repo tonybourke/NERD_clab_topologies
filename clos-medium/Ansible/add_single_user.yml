@@ -1,6 +1,6 @@
 ---
 - name: Add Users to device
-  hosts: LEAFS
+  hosts: FABRIC
   tasks:
     - name: Add SSH keys
       arista.eos.eos_user:
