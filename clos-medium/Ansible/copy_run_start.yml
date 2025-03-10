@@ -1,0 +1,8 @@
+---
+# Note, commands cannot be abbreviated, i.e. can't be "copy run start"
+- name: Save configs
+  hosts: all
+  tasks:
+    - name: Save configs with 'copy run start'
+      arista.eos.eos_command:
+        commands: copy running-config startup-config

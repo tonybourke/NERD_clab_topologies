@@ -6,6 +6,8 @@ This is a repo of containerlab topologies for labbing. Currently these labs oper
 
 This topolgy is two spines, four leafs, and two 'hosts' (just cEOS devices pretending to be hosts, at some point I may replace them with Linux containers). This is total of eight containers, and is tested for 12 GB VMs. I may do an even smaller topology for 8 GB. 
 
-![clos-small](clos-small-diagram.png)
+This topology is sufficient to run a three-stage Clos EVPN/VXLAN network, or a standard Layer 2 collapsed core (Arista calls is Layer 2 leaf/spine).
 
-To instantiate the sm
+![clos-small](clos-medium-diagram.png)
+
+To instantiate the smal 

@@ -1,0 +1,17 @@
+---
+- name: Add Users to device
+  hosts: LEAFS
+  tasks:
+    - name: Add SSH keys
+      arista.eos.eos_user:
+          name: tony
+          sshkey: ""
+          state: present
+    - name: Add user
+      arista.eos.eos_user:
+        name: tony
+        nopassword: true
+        privilege: 15
+        role: network-admin
+        state: present
+
