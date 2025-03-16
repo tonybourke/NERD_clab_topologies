@@ -1,5 +1,11 @@
 name: clos-medium
 
+prefix: ""  # This will keep "leaf1" as "leaf1", instead of clab-clos-medium-leaf1
+
+# If you want the Management network on a physical/virual LAN, attach a NIC to the mgmt-net Linux bridge, otherwise leave this commented out
+# mgmt:
+#   network: mgmt-net            
+#   bridge: mgmt-net
 
 topology:
   kinds:
