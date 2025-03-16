@@ -1,6 +1,6 @@
 # NERD Project Containerlab Topologies
 
-This is a repo of containerlab topologies for labbing. Currently these labs operate with cEOS-lab, which is Arista's containerized version of their EOS network operating system (NOS). As it's a container, it doesn't have all the features of a physical system (like hardware queues), but most features are supported. cEOS-lab is free to use for lab purposes, and is easy to obtain, which is why it's used for these topologies. 
+This is a repo of containerlab topologies for labbing. Currently these labs operate with cEOS-lab, which is Arista's containerized version of their EOS network operating system (NOS). As it's a container, it doesn't have all the features of a physical system (like hardware queues), but most features are supported, including data plane, control plane, EVPN/VXLAN, MPLS, and more. cEOS-lab is free to use for lab purposes, and is easy to obtain, which is why it's used for these topologies. 
 
 ## Medium Topology
 
