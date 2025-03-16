@@ -15,18 +15,18 @@ all:
       children:
         SPINES:
           hosts:
-            clab-clos-medium-spine1:
-            clab-clos-medium-spine2:
+            spine1:
+            spine2:
         LEAFS:
           hosts:
-            clab-clos-medium-leaf1:
-            clab-clos-medium-leaf2:
-            clab-clos-medium-leaf3:
-            clab-clos-medium-leaf4:
+            leaf1:
+            leaf2:
+            leaf3:
+            leaf4:
         ROUTERS:
           hosts:
-            clab-clos-medium-R1:
+            R1:
         HOSTS:
           hosts: 
-            clab-clos-medium-host1:
-            clab-clos-medium-host2:
+            host1:
+            host2:
