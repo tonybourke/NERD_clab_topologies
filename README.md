@@ -4,7 +4,9 @@ This is a repo of containerlab topologies for labbing. Currently these labs oper
 
 ## Medium Topology
 
-This topolgy is two spines, four leafs, two 'hosts' and one router connected to two of the leafs. This is total of nine containers, and is tested for 16 GB VMs. I may do an even smaller topology for 8 GB. 
+This topolgy is two spines, four leafs, two 'hosts' and one router connected to two of the leafs. This is total of nine containers, and is tested for 16 GB VMs with 8vCPUs. 
+
+The plan is to have other sizes, such as a smaller size (8 GB/4 vCPUs) and a large size (32GB/12vCPUs).
 
 This topology is sufficient to run a three-stage Clos EVPN/VXLAN network, or a standard Layer 2 collapsed core (Arista calls is Layer 2 leaf/spine).
 
