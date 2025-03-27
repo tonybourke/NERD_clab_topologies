@@ -1,0 +1,32 @@
+---
+all:
+  vars:
+    ansible_user: admin
+    ansible_network_os: eos
+    ansible_password: admin
+    ansible_connection: httpapi
+    ansible_httpapi_use_ssl: True
+    ansible_httpapi_validate_certs: False
+    ansible_httpapi_port: 443
+    ansible_become: yes
+    ansible_become_method: enable
+  children:
+    FABRIC:
+      children:
+        SPINES:
+          hosts:
+            spine1:
+            spine2:
+        LEAFS:
+          hosts:
+            leaf1:
+            leaf2:
+            leaf3:
+            leaf4:
+        ROUTERS:
+          hosts:
+            R1:
+        HOSTS:
+          hosts: 
+            host1:
+            host2:
