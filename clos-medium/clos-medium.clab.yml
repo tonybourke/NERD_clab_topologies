@@ -1,5 +1,13 @@
 name: clos-medium
 
+# This will deactivate IPv6 for management interfaces. Sometimes templates or AVD won't
+# configure an IPv6 address on a management interface, and Linux will try IPv6 first, 
+# causing a delay. 
+
+mgmt:
+  network: mgmt
+  ipv6-subnet: 
+  ipv4-subnet: 172.20.20.0/24
 prefix: ""  # This will keep "leaf1" as "leaf1", instead of clab-clos-medium-leaf1
 
 # If you want the Management network on a physical/virual LAN, attach a NIC to the mgmt-net Linux bridge, otherwise leave this commented out
