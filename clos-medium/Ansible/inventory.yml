@@ -13,7 +13,7 @@ all:
   children:
     INFRA:
       children:
-          ROUTERS:
+        ROUTERS:
           hosts:
             R1:
         HOSTS:
