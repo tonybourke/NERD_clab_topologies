@@ -1,0 +1,21 @@
+---
+- name: Setup basic stuff
+  hosts: all
+  tasks:
+    - name: Configure user arista
+      arista.eos.eos_user:
+        name: admin
+        configured_password: "admin123!"
+        privilege: 15
+        sshkey: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+        role: network-admin
+    - name: Configure user SSH key
+      arista.eos.eos_user:
+        name: admin
+        sshkey: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+        state: present
+    - name: Configure authentication
+      arista.eos.eos_config:
+        lines:
+          - aaa authentication login default local 
+          - aaa authorization exec default local

@@ -1,0 +1,74 @@
+---
+tenants:
+  - name: ACME
+    mac_vrf_vni_base: 10000
+    l2vlans:
+      - id: 1000
+        name: VLAN_1000
+      - id: 1001
+        name: VLAN_1001
+      - id: 1002
+        name: VLAN_1002
+      - id: 1003
+        name: VLAN_1003
+      - id: 1004
+        name: VLAN_1004
+      - id: 1005
+        name: VLAN_1005
+      - id: 1006
+        name: VLAN_1006      
+    vrfs:
+      - name: VRF_A
+        vrf_vni: 10
+        svis:
+          - id: 10
+            name: DMZ
+            enabled: true
+            ip_address_virtual: 10.1.10.1/24
+          - id: 20
+            name: Internal
+            enabled: true
+            ip_address_virtual: 10.1.20.1/24
+          - id: 30
+            name: Dev
+            enabled: true
+            ip_address_virtual: 10.1.30.1/24
+          - id: 40
+            name: QA
+            enabled: true
+            ip_address_virtual: 10.1.40.1/24
+          - id: 50
+            name: Guest
+            enabled: true
+            ip_address_virtual: 10.1.50.1/24
+          - id: 100
+            name: VLAN_100
+            enabled: true
+            ip_address_virtual: 10.1.100.1/24
+          - id: 200
+            name: VLAN_200
+            enabled: true
+            ip_address_virtual: 10.1.200.1/24
+          - id: 300
+            name: VLAN_200
+            enabled: true
+            ip_address_virtual: 10.1.31.1/24
+          - id: 400
+            name: VLAN_200
+            enabled: true
+            ip_address_virtual: 10.1.41.1/24    
+          - id: 500
+            name: VLAN_500
+            ip_address_virtual: 10.1.51.1/24 
+        l3_interfaces:
+          - interfaces: [Ethernet6, Ethernet6]
+            ip_addresses: [10.1.5.0/31, 10.1.5.2/31]
+            nodes: [clab-clos-large-borderleaf1, clab-clos-large-borderleaf2]
+            enabled: True 
+        bgp_peers:
+          - ip_address: 10.1.5.1
+            remote_as: 1
+            nodes: [clab-clos-large-borderleaf1]
+          - ip_address: 10.1.5.3
+            remote_as: 1
+            nodes: [clab-clos-large-borderleaf2]

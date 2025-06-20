@@ -1,0 +1,12 @@
+---
+network_ports:
+  - switches: [leaf3, leaf4]
+    switch_ports: [Ethernet7, Ethernet7]
+    description: host2
+    vlans: 20
+    mode: access
+    enabled: true
+    port_channel:
+      channel_id: 7
+      description: PortChanne1
+      mode: active

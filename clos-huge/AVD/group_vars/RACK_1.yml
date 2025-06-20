@@ -1,0 +1,13 @@
+---
+servers:
+  - name: host1
+    adapters:
+      - endpoint_ports: [ e1, e2]
+        switch_ports: [ Ethernet7, Ethernet7]
+        switches: [ leaf1, leaf2]
+        vlans: 10
+        mode: access
+        port_channel:
+          channel_id: 7
+          description: PortChanne1
+          mode: active
