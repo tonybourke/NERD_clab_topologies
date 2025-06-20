@@ -1,0 +1,487 @@
+name: clos-huge
+prefix: ""
+
+mgmt:
+  network: mgmt
+  ipv6-subnet:
+  ipv4-subnet: 172.20.20.0/24
+
+topology:
+  nodes:
+    leaf1:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.11
+    leaf2:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.12
+    leaf3:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.13
+    leaf4:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.14
+    leaf5:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.15
+    leaf6:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.16
+    leaf7:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.17
+    leaf8:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.18
+    leaf9:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.19
+    leaf10:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.20
+    leaf11:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.21
+    leaf12:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.22
+    leaf13:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.23
+    leaf14:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.24
+    leaf15:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.25
+    leaf16:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.26
+    leaf17:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.27
+    leaf18:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.28
+    leaf19:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.29
+    leaf20:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.30
+    spine1:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.101
+    spine2:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.102
+    spine3:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.103
+    host1:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.151
+    host2:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.152
+    R1:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.90
+    FW1:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.95
+    FW2:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.96
+    leaf21:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.31
+    leaf22:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.32
+    leaf23:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.33
+    leaf24:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.34
+    leaf25:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.35
+    leaf26:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.36
+    leaf27:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.37
+    leaf28:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.38
+    leaf29:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.39
+    leaf30:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.40
+    leaf31:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.41
+    leaf32:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.42
+    leaf33:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.43
+    leaf34:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.44
+    leaf35:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.45
+    leaf36:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.46
+    leaf37:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.47
+    leaf38:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.48
+    leaf39:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.49
+    leaf40:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.50
+    leaf41:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.51
+    leaf42:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.52
+    leaf43:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.53
+    leaf44:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.54
+    leaf45:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.55
+    leaf46:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.56
+    leaf47:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.57
+    leaf48:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.58
+    leaf49:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.59
+    leaf50:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.60
+
+    borderleaf1:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.91   
+    borderleaf2:
+      kind: ceos
+      image: ceos:4.34.1F-EFT3
+      mgmt-ipv4: 172.20.20.92
+
+
+    
+
+  links:
+# MLAG connections
+    - endpoints: ["leaf1:eth1", "leaf2:eth1"]
+    - endpoints: ["leaf1:eth2", "leaf2:eth2"]
+    - endpoints: ["leaf3:eth1", "leaf4:eth1"]
+    - endpoints: ["leaf3:eth2", "leaf4:eth2"]
+    - endpoints: ["leaf5:eth1", "leaf6:eth1"]
+    - endpoints: ["leaf5:eth2", "leaf6:eth2"]
+    - endpoints: ["leaf7:eth1", "leaf8:eth1"]
+    - endpoints: ["leaf7:eth2", "leaf8:eth2"]
+    - endpoints: ["leaf9:eth1", "leaf10:eth1"]
+    - endpoints: ["leaf9:eth2", "leaf10:eth2"]
+    - endpoints: ["leaf11:eth1", "leaf12:eth1"]
+    - endpoints: ["leaf11:eth2", "leaf12:eth2"]
+    - endpoints: ["leaf13:eth1", "leaf14:eth1"]
+    - endpoints: ["leaf13:eth2", "leaf14:eth2"]
+    - endpoints: ["leaf15:eth1", "leaf16:eth1"]
+    - endpoints: ["leaf15:eth2", "leaf16:eth2"]
+    - endpoints: ["leaf17:eth1", "leaf18:eth1"]
+    - endpoints: ["leaf17:eth2", "leaf18:eth2"]
+    - endpoints: ["leaf19:eth1", "leaf20:eth1"]
+    - endpoints: ["leaf19:eth2", "leaf20:eth2"]
+    - endpoints: ["leaf21:eth1", "leaf22:eth1"]
+    - endpoints: ["leaf21:eth2", "leaf22:eth2"]
+    - endpoints: ["leaf23:eth1", "leaf24:eth1"]
+    - endpoints: ["leaf23:eth2", "leaf24:eth2"]
+    - endpoints: ["leaf25:eth1", "leaf26:eth1"]
+    - endpoints: ["leaf25:eth2", "leaf26:eth2"]
+    - endpoints: ["leaf27:eth1", "leaf28:eth1"]
+    - endpoints: ["leaf27:eth2", "leaf28:eth2"]
+    - endpoints: ["leaf29:eth1", "leaf30:eth1"]
+    - endpoints: ["leaf29:eth2", "leaf30:eth2"]
+    - endpoints: ["leaf31:eth1", "leaf32:eth1"]
+    - endpoints: ["leaf31:eth2", "leaf32:eth2"]
+    - endpoints: ["leaf33:eth1", "leaf34:eth1"]
+    - endpoints: ["leaf33:eth2", "leaf34:eth2"]
+    - endpoints: ["leaf35:eth1", "leaf36:eth1"]
+    - endpoints: ["leaf35:eth2", "leaf36:eth2"]
+    - endpoints: ["leaf37:eth1", "leaf38:eth1"]
+    - endpoints: ["leaf37:eth2", "leaf38:eth2"]
+    - endpoints: ["leaf39:eth1", "leaf40:eth1"]
+    - endpoints: ["leaf39:eth2", "leaf40:eth2"]
+    - endpoints: ["leaf41:eth1", "leaf42:eth1"]
+    - endpoints: ["leaf41:eth2", "leaf42:eth2"]
+    - endpoints: ["leaf43:eth1", "leaf44:eth1"]
+    - endpoints: ["leaf43:eth2", "leaf44:eth2"]
+    - endpoints: ["leaf45:eth1", "leaf46:eth1"]
+    - endpoints: ["leaf45:eth2", "leaf46:eth2"]
+    - endpoints: ["leaf47:eth1", "leaf48:eth1"]
+    - endpoints: ["leaf47:eth2", "leaf48:eth2"]
+    - endpoints: ["leaf49:eth1", "leaf50:eth1"]
+    - endpoints: ["leaf49:eth2", "leaf50:eth2"]
+
+# Spines connections
+
+
+## Spine1
+
+    - endpoints: ["leaf1:eth3", "spine1:eth2"]
+    - endpoints: ["leaf2:eth3", "spine1:eth3"]
+    - endpoints: ["leaf3:eth3", "spine1:eth4"]
+    - endpoints: ["leaf4:eth3", "spine1:eth5"]
+    - endpoints: ["leaf5:eth3", "spine1:eth6"]
+    - endpoints: ["leaf6:eth3", "spine1:eth7"]
+    - endpoints: ["leaf7:eth3", "spine1:eth8"]
+    - endpoints: ["leaf8:eth3", "spine1:eth9"]
+    - endpoints: ["leaf9:eth3", "spine1:eth10"]
+    - endpoints: ["leaf10:eth3", "spine1:eth11"]
+    - endpoints: ["leaf11:eth3", "spine1:eth12"]
+    - endpoints: ["leaf12:eth3", "spine1:eth13"]
+    - endpoints: ["leaf13:eth3", "spine1:eth14"]
+    - endpoints: ["leaf14:eth3", "spine1:eth15"]
+    - endpoints: ["leaf15:eth3", "spine1:eth16"]
+    - endpoints: ["leaf16:eth3", "spine1:eth17"]
+    - endpoints: ["leaf17:eth3", "spine1:eth18"]
+    - endpoints: ["leaf18:eth3", "spine1:eth19"]
+    - endpoints: ["leaf19:eth3", "spine1:eth20"]
+    - endpoints: ["leaf20:eth3", "spine1:eth21"]
+    - endpoints: ["leaf21:eth3", "spine1:eth22"]
+    - endpoints: ["leaf22:eth3", "spine1:eth23"]
+    - endpoints: ["leaf23:eth3", "spine1:eth24"]
+    - endpoints: ["leaf24:eth3", "spine1:eth25"]
+    - endpoints: ["leaf25:eth3", "spine1:eth26"]
+    - endpoints: ["leaf26:eth3", "spine1:eth27"]
+    - endpoints: ["leaf27:eth3", "spine1:eth28"]
+    - endpoints: ["leaf28:eth3", "spine1:eth29"]
+    - endpoints: ["leaf29:eth3", "spine1:eth30"]
+    - endpoints: ["leaf30:eth3", "spine1:eth31"]
+    - endpoints: ["leaf31:eth3", "spine1:eth32"]
+    - endpoints: ["leaf32:eth3", "spine1:eth33"]
+    - endpoints: ["leaf33:eth3", "spine1:eth34"]
+    - endpoints: ["leaf34:eth3", "spine1:eth35"]
+    - endpoints: ["leaf35:eth3", "spine1:eth36"]
+    - endpoints: ["leaf36:eth3", "spine1:eth37"]
+    - endpoints: ["leaf37:eth3", "spine1:eth38"]
+    - endpoints: ["leaf38:eth3", "spine1:eth39"]
+    - endpoints: ["leaf39:eth3", "spine1:eth40"]
+    - endpoints: ["leaf40:eth3", "spine1:eth41"]
+    - endpoints: ["leaf41:eth3", "spine1:eth42"]
+    - endpoints: ["leaf42:eth3", "spine1:eth43"]
+    - endpoints: ["leaf43:eth3", "spine1:eth44"]
+    - endpoints: ["leaf44:eth3", "spine1:eth45"]
+    - endpoints: ["leaf45:eth3", "spine1:eth46"]
+    - endpoints: ["leaf46:eth3", "spine1:eth47"]
+    - endpoints: ["leaf47:eth3", "spine1:eth48"]
+    - endpoints: ["leaf48:eth3", "spine1:eth49"]
+    - endpoints: ["leaf49:eth3", "spine1:eth50"]
+    - endpoints: ["leaf50:eth3", "spine1:eth51"]
+    - endpoints: ["borderleaf1:eth3", "spine1:eth52"]
+    - endpoints: ["borderleaf2:eth3", "spine1:eth53"]
+
+## Spine2
+    - endpoints: ["leaf1:eth4", "spine2:eth2"]
+    - endpoints: ["leaf2:eth4", "spine2:eth3"]
+    - endpoints: ["leaf3:eth4", "spine2:eth4"]
+    - endpoints: ["leaf4:eth4", "spine2:eth5"]
+    - endpoints: ["leaf5:eth4", "spine2:eth6"]
+    - endpoints: ["leaf6:eth4", "spine2:eth7"]
+    - endpoints: ["leaf7:eth4", "spine2:eth8"]
+    - endpoints: ["leaf8:eth4", "spine2:eth9"]
+    - endpoints: ["leaf9:eth4", "spine2:eth10"]
+    - endpoints: ["leaf10:eth4", "spine2:eth11"]
+    - endpoints: ["leaf11:eth4", "spine2:eth12"]
+    - endpoints: ["leaf12:eth4", "spine2:eth13"]
+    - endpoints: ["leaf13:eth4", "spine2:eth14"]
+    - endpoints: ["leaf14:eth4", "spine2:eth15"]
+    - endpoints: ["leaf15:eth4", "spine2:eth16"]
+    - endpoints: ["leaf16:eth4", "spine2:eth17"]
+    - endpoints: ["leaf17:eth4", "spine2:eth18"]
+    - endpoints: ["leaf18:eth4", "spine2:eth19"]
+    - endpoints: ["leaf19:eth4", "spine2:eth20"]
+    - endpoints: ["leaf20:eth4", "spine2:eth21"]
+    - endpoints: ["leaf21:eth4", "spine2:eth22"]
+    - endpoints: ["leaf22:eth4", "spine2:eth23"]
+    - endpoints: ["leaf23:eth4", "spine2:eth24"]
+    - endpoints: ["leaf24:eth4", "spine2:eth25"]
+    - endpoints: ["leaf25:eth4", "spine2:eth26"]
+    - endpoints: ["leaf26:eth4", "spine2:eth27"]
+    - endpoints: ["leaf27:eth4", "spine2:eth28"]
+    - endpoints: ["leaf28:eth4", "spine2:eth29"]
+    - endpoints: ["leaf29:eth4", "spine2:eth30"]
+    - endpoints: ["leaf30:eth4", "spine2:eth31"]
+    - endpoints: ["leaf31:eth4", "spine2:eth32"]
+    - endpoints: ["leaf32:eth4", "spine2:eth33"]
+    - endpoints: ["leaf33:eth4", "spine2:eth34"]
+    - endpoints: ["leaf34:eth4", "spine2:eth35"]
+    - endpoints: ["leaf35:eth4", "spine2:eth36"]
+    - endpoints: ["leaf36:eth4", "spine2:eth37"]
+    - endpoints: ["leaf37:eth4", "spine2:eth38"]
+    - endpoints: ["leaf38:eth4", "spine2:eth39"]
+    - endpoints: ["leaf39:eth4", "spine2:eth40"]
+    - endpoints: ["leaf40:eth4", "spine2:eth41"]
+    - endpoints: ["leaf41:eth4", "spine2:eth42"]
+    - endpoints: ["leaf42:eth4", "spine2:eth43"]
+    - endpoints: ["leaf43:eth4", "spine2:eth44"]
+    - endpoints: ["leaf44:eth4", "spine2:eth45"]
+    - endpoints: ["leaf45:eth4", "spine2:eth46"]
+    - endpoints: ["leaf46:eth4", "spine2:eth47"]
+    - endpoints: ["leaf47:eth4", "spine2:eth48"]
+    - endpoints: ["leaf48:eth4", "spine2:eth49"]
+    - endpoints: ["leaf49:eth4", "spine2:eth50"]
+    - endpoints: ["leaf50:eth4", "spine2:eth51"]
+    - endpoints: ["borderleaf1:eth4", "spine2:eth52"]
+    - endpoints: ["borderleaf2:eth4", "spine2:eth53"]
+
+## Spine3
+    - endpoints: ["leaf1:eth5", "spine3:eth2"]
+    - endpoints: ["leaf2:eth5", "spine3:eth3"]
+    - endpoints: ["leaf3:eth5", "spine3:eth4"]
+    - endpoints: ["leaf4:eth5", "spine3:eth5"]
+    - endpoints: ["leaf5:eth5", "spine3:eth6"]
+    - endpoints: ["leaf6:eth5", "spine3:eth7"]
+    - endpoints: ["leaf7:eth5", "spine3:eth8"]
+    - endpoints: ["leaf8:eth5", "spine3:eth9"]
+    - endpoints: ["leaf9:eth5", "spine3:eth10"]
+    - endpoints: ["leaf10:eth5", "spine3:eth11"]
+    - endpoints: ["leaf11:eth5", "spine3:eth12"]
+    - endpoints: ["leaf12:eth5", "spine3:eth13"]
+    - endpoints: ["leaf13:eth5", "spine3:eth14"]
+    - endpoints: ["leaf14:eth5", "spine3:eth15"]
+    - endpoints: ["leaf15:eth5", "spine3:eth16"]
+    - endpoints: ["leaf16:eth5", "spine3:eth17"]
+    - endpoints: ["leaf17:eth5", "spine3:eth18"]
+    - endpoints: ["leaf18:eth5", "spine3:eth19"]
+    - endpoints: ["leaf19:eth5", "spine3:eth20"]
+    - endpoints: ["leaf20:eth5", "spine3:eth21"]
+    - endpoints: ["leaf21:eth5", "spine3:eth22"]
+    - endpoints: ["leaf22:eth5", "spine3:eth23"]
+    - endpoints: ["leaf23:eth5", "spine3:eth24"]
+    - endpoints: ["leaf24:eth5", "spine3:eth25"]
+    - endpoints: ["leaf25:eth5", "spine3:eth26"]
+    - endpoints: ["leaf26:eth5", "spine3:eth27"]
+    - endpoints: ["leaf27:eth5", "spine3:eth28"]
+    - endpoints: ["leaf28:eth5", "spine3:eth29"]
+    - endpoints: ["leaf29:eth5", "spine3:eth30"]
+    - endpoints: ["leaf30:eth5", "spine3:eth31"]
+    - endpoints: ["leaf31:eth5", "spine3:eth32"]
+    - endpoints: ["leaf32:eth5", "spine3:eth33"]
+    - endpoints: ["leaf33:eth5", "spine3:eth34"]
+    - endpoints: ["leaf34:eth5", "spine3:eth35"]
+    - endpoints: ["leaf35:eth5", "spine3:eth36"]
+    - endpoints: ["leaf36:eth5", "spine3:eth37"]
+    - endpoints: ["leaf37:eth5", "spine3:eth38"]
+    - endpoints: ["leaf38:eth5", "spine3:eth39"]
+    - endpoints: ["leaf39:eth5", "spine3:eth40"]
+    - endpoints: ["leaf40:eth5", "spine3:eth41"]
+    - endpoints: ["leaf41:eth5", "spine3:eth42"]
+    - endpoints: ["leaf42:eth5", "spine3:eth43"]
+    - endpoints: ["leaf43:eth5", "spine3:eth44"]
+    - endpoints: ["leaf44:eth5", "spine3:eth45"]
+    - endpoints: ["leaf45:eth5", "spine3:eth46"]
+    - endpoints: ["leaf46:eth5", "spine3:eth47"]
+    - endpoints: ["leaf47:eth5", "spine3:eth48"]
+    - endpoints: ["leaf48:eth5", "spine3:eth49"]
+    - endpoints: ["leaf49:eth5", "spine3:eth50"]
+    - endpoints: ["leaf50:eth5", "spine3:eth51"]
+    - endpoints: ["borderleaf1:eth5", "spine3:eth52"]
+    - endpoints: ["borderleaf2:eth5", "spine3:eth53"]
+
+
+    - endpoints: ["host1:eth1", "leaf1:eth7"]
+    - endpoints: ["host1:eth2", "leaf2:eth7"]
+    - endpoints: ["host1:eth3", "leaf3:eth7"]
+    - endpoints: ["host2:eth1", "leaf5:eth7"]
+    - endpoints: ["host2:eth2", "leaf6:eth7"]
+
+    - endpoints: ["R1:eth1", "borderleaf1:eth6"]
+    - endpoints: ["R1:eth2", "borderleaf2:eth6"]
+    - endpoints: ["FW1:eth1", "borderleaf1:eth7"]
+    - endpoints: ["FW1:eth2", "borderleaf2:eth7"]
+    - endpoints: ["FW2:eth1", "borderleaf1:eth8"]
+    - endpoints: ["FW2:eth2", "borderleaf2:eth8"]
