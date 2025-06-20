@@ -1,4 +1,4 @@
-name: clos-huge
+name: closhuge
 prefix: ""
 
 mgmt:
@@ -475,9 +475,9 @@ topology:
 
     - endpoints: ["host1:eth1", "leaf1:eth7"]
     - endpoints: ["host1:eth2", "leaf2:eth7"]
-    - endpoints: ["host1:eth3", "leaf3:eth7"]
-    - endpoints: ["host2:eth1", "leaf5:eth7"]
-    - endpoints: ["host2:eth2", "leaf6:eth7"]
+    - endpoints: ["host2:eth1", "leaf3:eth7"]
+    - endpoints: ["host2:eth2", "leaf4:eth7"]
+    - endpoints: ["host2:eth3", "leaf5:eth7"]
 
     - endpoints: ["R1:eth1", "borderleaf1:eth6"]
     - endpoints: ["R1:eth2", "borderleaf2:eth6"]
