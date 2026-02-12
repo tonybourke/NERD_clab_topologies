@@ -1,0 +1,74 @@
+name: spline
+
+# This will deactivate IPv6 for management interfaces. Sometimes templates or AVD won't
+# configure an IPv6 address on a management interface, and Linux will try IPv6 first, 
+# causing a delay. 
+
+mgmt:
+  network: mgmt
+  ipv6-subnet: 2001:db8:3fff::/64
+  ipv4-subnet: 172.20.20.0/24
+prefix: ""  # This will keep "leaf1" as "leaf1", instead of clab-clos-medium-leaf1
+
+# If you want the Management network on a physical/virual LAN, attach a NIC to the mgmt-net Linux bridge, otherwise leave this commented out
+# mgmt:
+#   network: mgmt-net            
+#   bridge: mgmt-net
+
+topology:
+  kinds:
+    ceos:
+      env:
+        CLAB_MGMT_VRF: MGMT
+  nodes:
+    spline1:
+      kind: ceos
+      image: ceos:4.35.1F
+      mgmt-ipv4: 172.20.20.101
+    spline2:
+      kind: ceos
+      image: ceos:4.35.1F
+      mgmt-ipv4: 172.20.20.102
+    host1:
+      kind: ceos
+      image: ceos:4.35.1F
+      mgmt-ipv4: 172.20.20.91
+    host2:
+      kind: ceos
+      image: ceos:4.35.1F
+      mgmt-ipv4: 172.20.20.92
+    host3:
+      kind: linux
+      image: almalinux:latest
+    host4:
+      kind: linux
+      image: almalinux:latest
+    rhost1:
+      kind: ceos
+      image: ceos:4.35.1F
+      mgmt-ipv4: 172.20.20.51
+    R1:
+      kind: ceos
+      image: ceos:4.35.1F
+      mgmt-ipv4: 172.20.20.93
+    R2:
+      kind: ceos
+      image: ceos:4.35.1F
+      mgmt-ipv4: 172.20.20.94
+  links:
+    - endpoints: ["spline1:eth1", "spline2:eth1"]
+    - endpoints: ["spline1:eth2", "spline2:eth2"]
+    - endpoints: ["spline1:eth3", "host1:eth1"]
+    - endpoints: ["spline2:eth3", "host1:eth2"]
+    - endpoints: ["spline1:eth4", "host2:eth1"]
+    - endpoints: ["spline2:eth4", "host2:eth2"]
+    - endpoints: ["spline1:eth5", "host3:eth1"]
+    - endpoints: ["spline2:eth5", "host3:eth2"]
+    - endpoints: ["spline1:eth6", "host4:eth1"]
+    - endpoints: ["spline2:eth6", "host4:eth2"]
+    - endpoints: ["spline1:eth7", "R1:eth1"]
+    - endpoints: ["spline2:eth7", "R1:eth2"]    
+    - endpoints: ["spline1:eth8", "R2:eth1"]
+    - endpoints: ["spline2:eth8", "R2:eth2"] 
+    - endpoints: ["R1:eth3", "rhost1:eth1"]
+    - endpoints: ["R1:eth4", "R2:eth3"]

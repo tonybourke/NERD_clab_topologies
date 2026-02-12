@@ -1,0 +1,35 @@
+all:
+  vars:
+  children:
+    ceos:
+      vars:
+        ansible_user: admin
+        ansible_password: admin
+        ansible_network_os: eos
+        ansible_connection: httpapi
+        ansible_httpapi_use_ssl: True
+        ansible_httpapi_validate_certs: False
+        ansible_httpapi_port: 443
+        ansible_become: yes
+        ansible_become_method: enable
+      hosts:
+        R1:
+          ansible_host: 172.20.20.93
+        R2:
+          ansible_host: 172.20.20.94
+        host1:
+          ansible_host: 172.20.20.91
+        host2:
+          ansible_host: 172.20.20.92
+        rhost1:
+          ansible_host: 172.20.20.51
+        spline1:
+          ansible_host: 172.20.20.101
+        spline2:
+          ansible_host: 172.20.20.102
+    linux:
+      hosts:
+        host3:
+          ansible_host: 172.20.20.2
+        host4:
+          ansible_host: 172.20.20.3

@@ -1,0 +1,39 @@
+---
+- name: Setup basic stuff
+  hosts: ceos
+  tasks:
+    - name: Add user (this must be done first)
+      arista.eos.eos_user:
+        name: tony
+        nopassword: true
+        state: present
+    - name: Add SSH keys and set roles
+      arista.eos.eos_user:
+        name: tony
+        sshkey: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+        state: present
+        privilege: 15
+        role: network-admin
+    - name: Configure authentication
+      arista.eos.eos_config:
+        lines:
+          - aaa authentication login default local 
+          - aaa authorization exec default local
+    
+    # - name: Upload token
+    #   arista.eos.eos_command:
+    #     commands:
+    #       - bash timeout 10 sudo ip netns exec ns-MGMT wget http://192.168.1.250/token.txt
+    #       - bash timeout 10 sudo mv token.txt /tmp/token
+    # - name: Shut terminattr
+    #   arista.eos.eos_config:
+    #     lines:  
+    #       - shutdown
+    #     parents:
+    #       - daemon TerminAttr
+    # - name: Turn it back on
+    #   arista.eos.eos_config:  
+    #     lines:
+    #       - no shutdown
+    #     parents:
+    #       - daemon TerminAttr

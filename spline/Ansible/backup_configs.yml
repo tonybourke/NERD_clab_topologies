@@ -1,0 +1,10 @@
+---
+- name: Backup configs
+  hosts: ceos
+  tasks:
+    - name: Pull configs and back them up
+      arista.eos.eos_config:
+        backup: true
+        backup_options:
+          dir_path: configs/L2LS
+          filename: "{{ inventory_hostname }}.cfg"

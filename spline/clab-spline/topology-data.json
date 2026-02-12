@@ -1,0 +1,526 @@
+{
+  "name": "spline",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "",
+      "mgmt": {
+        "network": "mgmt",
+        "bridge": "br-d14639a0bae8",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "2001:db8:3fff::/64",
+        "ipv6-gw": "2001:db8:3fff::1",
+        "external-access": true
+      }
+    }
+  },
+  "ssh-pub-keys": ["ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCUrro9HRd2CeRRS69Yn7Lz8fHfNEj3877gbXSb7eBdzMOFDMd05AWj/4reNc1hRyy8DGx/JXrfLzaJBbh9731cy+4kl2/gtIvin0T3ZWtHJ3HaBTZIRDtoI5Pgnpz1C4Zk/cQZM82RgF7SoQBCAx+dxj73FPylw8zBAtsgFl+t64L8N3atjQn7ThCc7QpPPrefh29WRchKH67Zormq6jX5bNZ/kUUw7fF2Sx4AzL9Ox5MmAiu05rvTm7+hLkahJfBghmKHzeNtZVoUkY7T0sAIQIJ+d/7xjwBrG0Lw2d89jaBmeUU3bbuIxG6nReQ7hWMlTzvxadMfyyf8y792ZRxTr93OPSGBdbS1GuZ15NM9HvP8nx+5V/Xt2fQBS+yc+NypIUwR2swUtyBrnAWYXL7KihO5BlP1JGGuGYYUUGlZlJDNNYeOT4EUhhPJ8peCHsbNqagEbxrrC9I87jKADcSJNyjYxorFN8Crh9rB8HPWFNtolTr/IrVwQliuPHSeNC0="],
+  "nodes": {
+    "R1": {
+      "index": "0",
+      "shortname": "R1",
+      "longname": "R1",
+      "fqdn": "R1.spline.io",
+      "group": "",
+      "labdir": "/home/tony/containerlab/NERD_clab_topologies/spline/clab-spline/R1",
+      "kind": "ceos",
+      "image": "ceos:4.35.1F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.20.20.93",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:db8:3fff::6",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:61:39:b1",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-d14639a0bae8",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/tony/containerlab/NERD_clab_topologies/spline/clab-spline/R1",
+        "clab-node-longname": "R1",
+        "clab-node-name": "R1",
+        "clab-node-type": "",
+        "clab-owner": "tony",
+        "clab-topo-file": "/home/tony/containerlab/NERD_clab_topologies/spline/spline.clab.yml",
+        "containerlab": "spline"
+      },
+      "port-bindings": [
+      ]
+    },
+    "R2": {
+      "index": "1",
+      "shortname": "R2",
+      "longname": "R2",
+      "fqdn": "R2.spline.io",
+      "group": "",
+      "labdir": "/home/tony/containerlab/NERD_clab_topologies/spline/clab-spline/R2",
+      "kind": "ceos",
+      "image": "ceos:4.35.1F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.20.20.94",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:db8:3fff::8",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:e7:a4:7e",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-d14639a0bae8",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/tony/containerlab/NERD_clab_topologies/spline/clab-spline/R2",
+        "clab-node-longname": "R2",
+        "clab-node-name": "R2",
+        "clab-node-type": "",
+        "clab-owner": "tony",
+        "clab-topo-file": "/home/tony/containerlab/NERD_clab_topologies/spline/spline.clab.yml",
+        "containerlab": "spline"
+      },
+      "port-bindings": [
+      ]
+    },
+    "host1": {
+      "index": "2",
+      "shortname": "host1",
+      "longname": "host1",
+      "fqdn": "host1.spline.io",
+      "group": "",
+      "labdir": "/home/tony/containerlab/NERD_clab_topologies/spline/clab-spline/host1",
+      "kind": "ceos",
+      "image": "ceos:4.35.1F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.20.20.91",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:db8:3fff::2",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:f0:0f:ac",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-d14639a0bae8",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/tony/containerlab/NERD_clab_topologies/spline/clab-spline/host1",
+        "clab-node-longname": "host1",
+        "clab-node-name": "host1",
+        "clab-node-type": "",
+        "clab-owner": "tony",
+        "clab-topo-file": "/home/tony/containerlab/NERD_clab_topologies/spline/spline.clab.yml",
+        "containerlab": "spline"
+      },
+      "port-bindings": [
+      ]
+    },
+    "host2": {
+      "index": "3",
+      "shortname": "host2",
+      "longname": "host2",
+      "fqdn": "host2.spline.io",
+      "group": "",
+      "labdir": "/home/tony/containerlab/NERD_clab_topologies/spline/clab-spline/host2",
+      "kind": "ceos",
+      "image": "ceos:4.35.1F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.20.20.92",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:db8:3fff::5",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:78:38:fc",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-d14639a0bae8",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/tony/containerlab/NERD_clab_topologies/spline/clab-spline/host2",
+        "clab-node-longname": "host2",
+        "clab-node-name": "host2",
+        "clab-node-type": "",
+        "clab-owner": "tony",
+        "clab-topo-file": "/home/tony/containerlab/NERD_clab_topologies/spline/spline.clab.yml",
+        "containerlab": "spline"
+      },
+      "port-bindings": [
+      ]
+    },
+    "host3": {
+      "index": "4",
+      "shortname": "host3",
+      "longname": "host3",
+      "fqdn": "host3.spline.io",
+      "group": "",
+      "labdir": "/home/tony/containerlab/NERD_clab_topologies/spline/clab-spline/host3",
+      "kind": "linux",
+      "image": "almalinux:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:db8:3fff::9",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-d14639a0bae8",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/tony/containerlab/NERD_clab_topologies/spline/clab-spline/host3",
+        "clab-node-longname": "host3",
+        "clab-node-name": "host3",
+        "clab-node-type": "",
+        "clab-owner": "tony",
+        "clab-topo-file": "/home/tony/containerlab/NERD_clab_topologies/spline/spline.clab.yml",
+        "containerlab": "spline"
+      },
+      "port-bindings": [
+      ]
+    },
+    "host4": {
+      "index": "5",
+      "shortname": "host4",
+      "longname": "host4",
+      "fqdn": "host4.spline.io",
+      "group": "",
+      "labdir": "/home/tony/containerlab/NERD_clab_topologies/spline/clab-spline/host4",
+      "kind": "linux",
+      "image": "almalinux:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:db8:3fff::a",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-d14639a0bae8",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/tony/containerlab/NERD_clab_topologies/spline/clab-spline/host4",
+        "clab-node-longname": "host4",
+        "clab-node-name": "host4",
+        "clab-node-type": "",
+        "clab-owner": "tony",
+        "clab-topo-file": "/home/tony/containerlab/NERD_clab_topologies/spline/spline.clab.yml",
+        "containerlab": "spline"
+      },
+      "port-bindings": [
+      ]
+    },
+    "rhost1": {
+      "index": "6",
+      "shortname": "rhost1",
+      "longname": "rhost1",
+      "fqdn": "rhost1.spline.io",
+      "group": "",
+      "labdir": "/home/tony/containerlab/NERD_clab_topologies/spline/clab-spline/rhost1",
+      "kind": "ceos",
+      "image": "ceos:4.35.1F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.20.20.51",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:db8:3fff::4",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:fa:d9:0a",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-d14639a0bae8",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/tony/containerlab/NERD_clab_topologies/spline/clab-spline/rhost1",
+        "clab-node-longname": "rhost1",
+        "clab-node-name": "rhost1",
+        "clab-node-type": "",
+        "clab-owner": "tony",
+        "clab-topo-file": "/home/tony/containerlab/NERD_clab_topologies/spline/spline.clab.yml",
+        "containerlab": "spline"
+      },
+      "port-bindings": [
+      ]
+    },
+    "spline1": {
+      "index": "7",
+      "shortname": "spline1",
+      "longname": "spline1",
+      "fqdn": "spline1.spline.io",
+      "group": "",
+      "labdir": "/home/tony/containerlab/NERD_clab_topologies/spline/clab-spline/spline1",
+      "kind": "ceos",
+      "image": "ceos:4.35.1F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.20.20.101",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:db8:3fff::3",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:3a:f6:f7",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-d14639a0bae8",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/tony/containerlab/NERD_clab_topologies/spline/clab-spline/spline1",
+        "clab-node-longname": "spline1",
+        "clab-node-name": "spline1",
+        "clab-node-type": "",
+        "clab-owner": "tony",
+        "clab-topo-file": "/home/tony/containerlab/NERD_clab_topologies/spline/spline.clab.yml",
+        "containerlab": "spline"
+      },
+      "port-bindings": [
+      ]
+    },
+    "spline2": {
+      "index": "8",
+      "shortname": "spline2",
+      "longname": "spline2",
+      "fqdn": "spline2.spline.io",
+      "group": "",
+      "labdir": "/home/tony/containerlab/NERD_clab_topologies/spline/clab-spline/spline2",
+      "kind": "ceos",
+      "image": "ceos:4.35.1F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.20.20.102",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:db8:3fff::7",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:97:86:34",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-d14639a0bae8",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/tony/containerlab/NERD_clab_topologies/spline/clab-spline/spline2",
+        "clab-node-longname": "spline2",
+        "clab-node-name": "spline2",
+        "clab-node-type": "",
+        "clab-owner": "tony",
+        "clab-topo-file": "/home/tony/containerlab/NERD_clab_topologies/spline/spline.clab.yml",
+        "containerlab": "spline"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "a": {
+        "node": "spline1",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:9c:4a:d1",
+        "peer": "z"
+      },
+      "z": {
+        "node": "spline2",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:be:ec:fb",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "spline1",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:02:55:6c",
+        "peer": "z"
+      },
+      "z": {
+        "node": "spline2",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:13:a8:61",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "spline1",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:b4:14:71",
+        "peer": "z"
+      },
+      "z": {
+        "node": "host1",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:c3:88:b3",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "spline2",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:ea:f5:27",
+        "peer": "z"
+      },
+      "z": {
+        "node": "host1",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:5e:a3:ec",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "spline1",
+        "interface": "eth4",
+        "mac": "aa:c1:ab:0b:e8:90",
+        "peer": "z"
+      },
+      "z": {
+        "node": "host2",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:64:5e:3b",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "spline2",
+        "interface": "eth4",
+        "mac": "aa:c1:ab:98:1e:b5",
+        "peer": "z"
+      },
+      "z": {
+        "node": "host2",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:c0:f4:7b",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "spline1",
+        "interface": "eth5",
+        "mac": "aa:c1:ab:04:87:a8",
+        "peer": "z"
+      },
+      "z": {
+        "node": "host3",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:03:31:76",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "spline2",
+        "interface": "eth5",
+        "mac": "aa:c1:ab:b0:f5:1b",
+        "peer": "z"
+      },
+      "z": {
+        "node": "host3",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:ec:a0:aa",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "spline1",
+        "interface": "eth6",
+        "mac": "aa:c1:ab:0b:e4:6e",
+        "peer": "z"
+      },
+      "z": {
+        "node": "host4",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:03:37:4c",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "spline2",
+        "interface": "eth6",
+        "mac": "aa:c1:ab:8f:9f:72",
+        "peer": "z"
+      },
+      "z": {
+        "node": "host4",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:e8:fb:05",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "spline1",
+        "interface": "eth7",
+        "mac": "aa:c1:ab:19:4f:41",
+        "peer": "z"
+      },
+      "z": {
+        "node": "R1",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:b3:00:6f",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "spline2",
+        "interface": "eth7",
+        "mac": "aa:c1:ab:ab:7e:b1",
+        "peer": "z"
+      },
+      "z": {
+        "node": "R1",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:d1:e7:c6",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "spline1",
+        "interface": "eth8",
+        "mac": "aa:c1:ab:5f:12:90",
+        "peer": "z"
+      },
+      "z": {
+        "node": "R2",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:e2:f1:e2",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "spline2",
+        "interface": "eth8",
+        "mac": "aa:c1:ab:6f:ea:12",
+        "peer": "z"
+      },
+      "z": {
+        "node": "R2",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:e6:47:85",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "R1",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:b9:70:11",
+        "peer": "z"
+      },
+      "z": {
+        "node": "rhost1",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:dd:e3:4e",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "R1",
+        "interface": "eth4",
+        "mac": "aa:c1:ab:7d:ed:68",
+        "peer": "z"
+      },
+      "z": {
+        "node": "R2",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:48:08:d5",
+        "peer": "a"
+      }
+    }
+  ]
+}
